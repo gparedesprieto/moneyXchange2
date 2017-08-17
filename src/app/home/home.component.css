@@ -1,0 +1,99 @@
+/*styles for home content only*/
+
+.tabs, .pills {
+    margin: 0 auto;
+    padding: 0;
+    width: 400px;
+}
+
+.jumbotron {
+    height: 10px!important;
+    background-color: #fff;
+}
+
+
+
+/* default styles here for older browsers. 
+       I tend to go for a 600px - 960px width max but using percentages
+    */
+    @media only screen and (min-width:960px){
+        /* styles for browsers larger than 960px; */
+        .menufix {
+		    height: 50px!important;
+		    background-color: #fff;
+		}
+		.menufix2 {
+		    height: 20px!important;
+		    background-color: #fff;
+		}
+        
+    }
+    @media only screen and (min-width:1440px){
+        /* styles for browsers larger than 1440px; */
+        .menufix {
+		    height: 50px!important;
+		    background-color: #fff;
+		}
+		.menufix2 {
+		    height: 10px!important;
+		    background-color: #fff;
+		}
+
+    }
+    @media only screen and (min-width:2000px){
+        /* for sumo sized (mac) screens */
+        .menufix {
+		    height: 50px!important;
+		    background-color: #fff;
+		}
+		.menufix2 {
+		    height: 10px!important;
+		    background-color: #fff;
+		}
+    }
+    @media only screen and (max-device-width:480px){
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+       .menufix {
+		    height: 0px!important;
+		    background-color: #fff;
+		}
+		.menufix2 {
+		    height: 0px!important;
+		    background-color: #fff;
+		}
+    }
+    @media only screen and (device-width:768px){
+       /* default iPad screens */
+       .menufix {
+		    height: 50px!important;
+		    background-color: #fff;
+		}
+		.menufix2 {
+		    height: 10px!important;
+		    background-color: #fff;
+		}
+    }
+    /* different techniques for iPad screening */
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+      /* For portrait layouts only */
+        .menufix {
+		    height: 50px!important;
+		    background-color: #fff;
+		}
+		.menufix2 {
+		    height: 10px!important;
+		    background-color: #fff;
+		}
+    }
+
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+      /* For landscape layouts only */
+        .menufix {
+		    height: 50px!important;
+		    background-color: #fff;
+		}
+		.menufix2 {
+		    height: 10px!important;
+		    background-color: #fff;
+		}
+    }

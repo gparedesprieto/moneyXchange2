@@ -1,0 +1,67 @@
+<div>
+  <!--h1 x-large class="sample-content">Your Content Here</h1>
+
+  <hr>
+
+  <div>
+    For hot module reloading run
+    <pre>npm run start:hmr</pre>
+  </div-->
+
+  <!--hr-->
+
+  <div class="menufix">
+    <!--h2>Welcome</h2-->
+  </div>
+
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-heading"><span class="label label-warning"></span> {{ _todayEntity.base }} a {{ _exchangeMoneySymbolDefault }} {{ _Exchange }} | Date: {{ _todayEntity.date }} |  Exchange rate: {{ _todayEntity.value }}  </div>
+      <div class="panel-body">
+
+        <div class="col-md-6 col-xs-12">
+
+          <!--label> Fecha: {{ _todayEntity.date }} </label--> 
+
+          <input [textMask]="{mask: maskDolar}" [(ngModel)]="myModel" type="text" placeholder="USD" [(ngModel)]="model.valueEnter" class="form-control"/>
+
+        </div>
+
+        <div class="col-md-6 col-xs-12">
+
+          <input [textMask]="{mask: maskEuro}" [(ngModel)]="model.valueExchange" type="text" placeholder="EUR" readonly="readonly" class="form-control"/>
+        
+        </div>
+
+        <div class="col-md-12">
+          <div class="text-center" style="margin-top: 15px;">
+            <button (click)="ToExchange()" class="btn btn-warning">CALCULATE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Mostrar precio de divisa de Dólares americanos a otras divisas -->
+
+    <div class="col-md-4 col-md-offset-2 col-xs-offset-0">
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let divisaItem of _divisa1; let i = index">
+          {{ divisaItem.name }}
+          {{ divisaItem.value }}
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let divisaItem of _divisa2; let i = index">
+          {{ divisaItem.name }}
+          {{ divisaItem.value }}
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  
+
+</div>

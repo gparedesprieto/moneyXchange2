@@ -1,0 +1,1 @@
+{"version":3,"file":"2.chunk.js","sources":["webpack:///./src/assets/mock-data/mock-data.json"],"sourcesContent":["module.exports = [{\"res\":\"data\"}]\n\n\n//////////////////\n// WEBPACK FOOTER\n// ./src/assets/mock-data/mock-data.json\n// module id = 386\n// module chunks = 2"],"mappings":";;;;;AAAA;;;;A","sourceRoot":""}
